@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Narayan sample for Risha&Ria</title>
+</head>
+<body>
+    <button id="silly">Do it</button>
+    <button id="clear">clear</button>
+    <div id="results"></div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/silly.js"></script>
+
+ <script>
+     $('#silly').click(function () {
+         SILLY.doit($('#results'));
+     });
+
+     $('#clear').click(function () {
+         $('#results').html('');
+     });
+
+  </script>
+</body>
+</html>
